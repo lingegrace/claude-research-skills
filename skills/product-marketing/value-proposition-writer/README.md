@@ -1,4 +1,4 @@
-# product-value-fab: Product value & FAB analysis
+# value-proposition-writer: Value proposition writer — features to benefits (FAB)
 
 Turns a PRD, spec or feature list into a Feature–Advantage–Benefit analysis grounded in your audience, their pain points and the competition.
 
@@ -12,4 +12,4 @@ It always starts by asking what you're trying to achieve and what you already ha
 
 - Skill instructions: [SKILL.md](SKILL.md)
 
-Install the whole collection in Claude Code with `/plugin marketplace add lingegrace/claude-research-skills`, or upload [product-value-fab.zip](../../../dist/product-value-fab.zip) in Claude.ai under Settings → Capabilities → Skills. See the [main README](../../../README.md).
+Install the whole collection in Claude Code with `/plugin marketplace add lingegrace/claude-research-skills`, or upload [value-proposition-writer.zip](../../../dist/value-proposition-writer.zip) in Claude.ai under Settings → Capabilities → Skills. See the [main README](../../../README.md).

@@ -15,7 +15,7 @@ Input: what the team knows about the product, customers and competitors (PRD, FA
    - **Target customer:** who it's best for. Push for a narrow answer; "everyone" is not a target.
    - **Constraints:** brand voice, words to avoid, legal limits on claims, language and market
 
-   Done when you know the target customer and have at least one named alternative. If `product-value-fab` or `customer-review-mining` output exists, use it.
+   Done when you know the target customer and have at least one named alternative. If `value-proposition-writer` or `customer-review-mining` output exists, use it.
 
 2. **Map the positioning, in this order** (each step builds on the one before):
    1. **Competitive alternatives:** what customers would use if this product didn't exist, including spreadsheets, agencies and doing nothing.

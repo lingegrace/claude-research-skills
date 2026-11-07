@@ -5,7 +5,7 @@
 [![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-222)](#install)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**15 free, open-source [Claude Skills](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) (`SKILL.md`) for the human side of product work and research:** product value (FAB) analysis, positioning and messaging, personas and Jobs-to-be-Done, voice-of-customer review mining, feature launch kits, customer case studies, AI product audits, competitor analysis, deep research, literature reviews, thematic analysis, survey analysis and fact-checking.
+**15 free, open-source [Claude Skills](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) (`SKILL.md`) for the human side of product work and research:** value propositions (features → benefits, FAB), positioning and messaging, personas and Jobs-to-be-Done, voice-of-customer review mining, feature launch kits, customer case studies, AI product audits, competitor analysis, deep research, literature reviews, thematic analysis, survey analysis and fact-checking.
 
 Most popular Claude skills help you **write code**. These help with the work around the code: understanding the customer, explaining the value, launching, and researching the evidence.
 
@@ -27,7 +27,7 @@ They work in **Claude Code**, **Claude.ai**, the **Claude desktop app**, and any
 
 | Skill | You give it | You get back |
 |---|---|---|
-| [`product-value-fab`](skills/product-marketing/product-value-fab/) | PRD, spec, feature list, landing page | **Feature–Advantage–Benefit** matrix per audience, value proposition, the finished PRD value section or one-pager |
+| [`value-proposition-writer`](skills/product-marketing/value-proposition-writer/) | PRD, spec, feature list, landing page | **Value proposition** built from a **Feature–Advantage–Benefit (FAB)** matrix per audience, value proposition, the finished PRD value section or one-pager |
 | [`positioning-messaging`](skills/product-marketing/positioning-messaging/) | Product docs, FAB, personas, competitor notes | **Positioning statement**, **messaging house**, taglines, homepage heroes, elevator pitches |
 | [`user-persona-builder`](skills/product-marketing/user-persona-builder/) | Interview notes, surveys, reviews, CRM notes | Evidence-based **personas** and **Jobs-to-be-Done (JTBD)** / ICP |
 | [`customer-review-mining`](skills/product-marketing/customer-review-mining/) | G2 / App Store / Reddit reviews, NPS, tickets | Ranked **voice-of-customer** pain points, outcomes and objections, with quotes |
@@ -36,7 +36,7 @@ They work in **Claude Code**, **Claude.ai**, the **Claude desktop app**, and any
 | [`customer-case-study`](skills/product-marketing/customer-case-study/) | Customer interview transcript, CSM notes | **Case study**, sales-slide and social versions, quote-approval list |
 | [`ai-product-audit`](skills/product-marketing/ai-product-audit/) | Screenshots, flows, spec of an AI feature | **AI trust & risk audit**: transparency, dark patterns, privacy, safety, EU AI Act pointers |
 
-**How they connect:** `customer-review-mining` + `user-persona-builder` → `product-value-fab` → `positioning-messaging` → `feature-launch-kit` → `customer-case-study`. `competitive-market-research` feeds the Advantage column of FAB.
+**How they connect:** `customer-review-mining` + `user-persona-builder` → `value-proposition-writer` → `positioning-messaging` → `feature-launch-kit` → `customer-case-study`. `competitive-market-research` feeds the Advantage column of FAB.
 
 ### 🎓 Sociology & Social Science Research: for students, researchers and UX researchers
 
@@ -78,7 +78,7 @@ Then install everything, or one section:
 /plugin install research-writing-skills@lingegrace-research-skills      # 2 research & writing skills
 ```
 
-Claude picks the right skill when your request matches, or you can call one by name: *"use product-value-fab on this PRD"*.
+Claude picks the right skill when your request matches, or you can call one by name: *"use value-proposition-writer on this PRD"*.
 
 ### Manual install
 
@@ -126,7 +126,7 @@ Product managers, product marketing managers, founders, sales enablement, UX res
 Most top skills focus on coding (TDD, code review, frontend design). These cover the "human and content" side of product and research work, and each one asks about your goal, audience and existing material before producing anything.
 
 **Do these skills browse the web?**
-A skill doesn't add web access. If your Claude environment has web search (for example for competitor research in `product-value-fab`), the skills use it and cite what they read. Otherwise, give them your files.
+A skill doesn't add web access. If your Claude environment has web search (for example for competitor research in `value-proposition-writer`), the skills use it and cite what they read. Otherwise, give them your files.
 
 **Do they work with Codex, Cursor or other agents?**
 `SKILL.md` is plain Markdown. Any agent that supports the Agent Skills format can load it.
@@ -178,7 +178,7 @@ License: [MIT](LICENSE)
 4. 绝不编造数据、引用或客户，没有证据的地方都会标出来。
 
 **三个栏目：**
-- 📦 **产品与市场**（8 个）：`product-value-fab`（产品价值 FAB）· `positioning-messaging`（定位与文案）· `user-persona-builder`（用户画像 / JTBD）· `customer-review-mining`（评论挖掘）· `competitive-market-research`（竞品分析）· `feature-launch-kit`（上线物料）· `customer-case-study`（客户案例）· `ai-product-audit`（AI 产品审查）
+- 📦 **产品与市场**（8 个）：`value-proposition-writer`（价值主张 / 功能→优势→好处 FAB）· `positioning-messaging`（定位与文案）· `user-persona-builder`（用户画像 / JTBD）· `customer-review-mining`（评论挖掘）· `competitive-market-research`（竞品分析）· `feature-launch-kit`（上线物料）· `customer-case-study`（客户案例）· `ai-product-audit`（AI 产品审查）
 - 🎓 **社会学研究**（5 个）：`research-question-grill`（研究问题追问）· `sociology-deep-research`（深度研究 / 文献综述）· `interview-guide`（访谈提纲）· `thematic-analysis`（Braun & Clarke 主题分析）· `quantitative-analysis`（定量 / 问卷分析）
 - 🔎 **研究与写作**（2 个）：`content-research-analyst`（资料研究简报）· `fact-check-draft`（稿件事实核查）
 
