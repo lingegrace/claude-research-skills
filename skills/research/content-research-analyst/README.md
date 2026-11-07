@@ -2,6 +2,14 @@
 
 Turns articles, reports and news into a source-traceable research brief before you write a post, newsletter or report.
 
+| | |
+|---|---|
+| **You give it** | Articles, industry reports, news, PDFs or pasted text you've collected |
+| **You get back** | An 8-section research brief: source register, claim–evidence table, conflicts, creator insights, gaps and a content handoff |
+| **Method** | Source register + claim classification (reported fact / interpretation / inference) |
+| **Search terms** | research brief, fact-check sources, summarize reports, research for LinkedIn post, content research |
+
+
 A Claude Skill that turns web articles, industry reports, market research and news into a **source-traceable research brief**. Every claim gets a source ID and locator, publication dates are kept apart from event dates, and conflicts between sources are flagged. It never invents statistics, quotes or citations.
 
 **Good for:** researching and fact-checking sources before you write a LinkedIn post, newsletter, X thread or blog article. Produces an English brief, with an optional Chinese or bilingual summary.
