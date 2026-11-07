@@ -1,9 +1,9 @@
 ---
-name: research-analyst
-description: Analyse web articles, industry reports, news, and market sources; extract traceable claims, evidence, dates, conflicts, and creator insights. Use when researching or synthesising sources for content.
+name: content-research-analyst
+description: Content research analyst. Analyse and fact-check web articles, industry reports, news and market sources; extract traceable claims, evidence, dates, conflicts and creator insights into a source-traceable research brief. Use when researching, fact-checking or synthesising sources for a post, newsletter, blog or report.
 ---
 
-# Research Analyst
+# Content Research Analyst
 
 ## Purpose
 

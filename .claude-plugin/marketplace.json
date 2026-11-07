@@ -11,11 +11,11 @@
   "plugins": [
     {
       "name": "research-skills",
-      "description": "research-analyst (content research brief), sociology-deep-research (literature review & deep research), competitive-market-research (competitor analysis, battlecards, market landscape).",
+      "description": "content-research-analyst (content research brief), sociology-deep-research (literature review & deep research), competitive-market-research (competitor analysis, battlecards, market landscape).",
       "source": "./",
       "strict": false,
       "skills": [
-        "./skills/research-analyst",
+        "./skills/content-research-analyst",
         "./skills/sociology-deep-research",
         "./skills/competitive-market-research"
       ]

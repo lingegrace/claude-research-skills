@@ -1,4 +1,6 @@
-# research-analyst: AI research assistant Claude Skill for content creators
+# content-research-analyst: Content research & fact-checking
+
+Turns articles, reports and news into a source-traceable research brief before you write a post, newsletter or report.
 
 A Claude Skill that turns web articles, industry reports, market research and news into a **source-traceable research brief**. Every claim gets a source ID and locator, publication dates are kept apart from event dates, and conflicts between sources are flagged. It never invents statistics, quotes or citations.
 
@@ -11,4 +13,4 @@ A Claude Skill that turns web articles, industry reports, market research and ne
 - Output contract: [references/output-contract.md](references/output-contract.md)
 - Acceptance tests: [references/evaluation-cases.md](references/evaluation-cases.md)
 
-Install all three: `/plugin marketplace add lingegrace/claude-research-skills` then `/plugin install research-skills@lingegrace-research-skills` in Claude Code, or upload [research-analyst.zip](../../dist/research-analyst.zip) in Claude.ai under Settings → Capabilities → Skills. See the [main README](../../README.md).
+Install all three: `/plugin marketplace add lingegrace/claude-research-skills` then `/plugin install research-skills@lingegrace-research-skills` in Claude Code, or upload [content-research-analyst.zip](../../dist/content-research-analyst.zip) in Claude.ai under Settings → Capabilities → Skills. See the [main README](../../README.md).

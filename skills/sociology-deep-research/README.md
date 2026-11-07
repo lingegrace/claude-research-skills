@@ -1,4 +1,6 @@
-# sociology-deep-research: AI literature review and research dossier Claude Skill
+# sociology-deep-research: Sociology deep research & literature review
+
+Builds a citation-checked literature review and research dossier on a social question, with claim–evidence tables and an adversarial critique.
 
 A Claude Skill for **doing sociology, not just summarizing it**. It produces a source- and claim-traceable research dossier: a scoping brief, a human checkpoint, a search log, source / claim / evidence / argument ledgers (CSV), an adversarial critique, graded insights, a 10-point scorecard and a readiness gate.
 

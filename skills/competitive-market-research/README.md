@@ -1,4 +1,6 @@
-# competitive-market-research: competitive intelligence and battlecard Claude Skill
+# competitive-market-research: Competitor analysis & market research
+
+Builds competitor profiles, sales battlecards, market maps and pricing teardowns, with every source graded by how much to trust it.
 
 A Claude Skill for **B2B competitive intelligence that doesn't just repeat vendor marketing**. It grades every source by tier (T1 SEC filings and pricing pages → T5 vendor marketing), counts independent signals rather than URLs, runs a **mirror battlecard** (your competitor's view of you) to catch sponsor bias, and grades findings **FACT / READ / BET** and implications **ACT / WATCH / RESEARCH-MORE**.
 

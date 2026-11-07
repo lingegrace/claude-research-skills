@@ -16,13 +16,13 @@
 
 | If you want to… | Use | In one line |
 |---|---|---|
-| **Research and fact-check sources before writing** a post, newsletter, blog or report | 🔎 [`research-analyst`](skills/research-analyst/) | General-purpose **AI research assistant**: articles, reports and news in, a **citation-backed research brief** out |
+| **Research and fact-check sources before writing** a post, newsletter, blog or report | 🔎 [`content-research-analyst`](skills/content-research-analyst/) | General-purpose **AI research assistant**: articles, reports and news in, a **citation-backed research brief** out |
 | **Do a literature review on a social question** (sociology, social science, AI & society, policy) | 🎓 [`sociology-deep-research`](skills/sociology-deep-research/) | **Academic deep research** for the social sciences: a **systematic-style literature review** with claim–evidence tables and an argument map |
 | **Analyze competitors or a market** (B2B, SaaS, product marketing, sales) | 📊 [`competitive-market-research`](skills/competitive-market-research/) | **Competitive intelligence**: competitor profiles, **battlecards**, market landscape maps, pricing teardowns and **win-loss analysis** |
 
 **How they differ:**
 
-- **`research-analyst` is the general one.** It is fast and works with whatever sources you paste in or upload. It is made for creators and analysts who need to know what the sources actually say.
+- **`content-research-analyst` is the general one.** It is fast and works with whatever sources you paste in or upload. It is made for creators and analysts who need to know what the sources actually say.
 - **`sociology-deep-research` is the academic one.** It builds a full dossier, stops for your approval of the research direction, separates descriptive, associational and causal claims, and runs an adversarial critique of its own argument. It is made for students, researchers and policy analysts.
 - **`competitive-market-research` is the business one.** It grades every source by trust tier (T1 SEC filings and pricing pages → T5 vendor marketing) and writes a "mirror battlecard" (your competitor's view of *you*) to catch wishful thinking. Every recommendation is labeled ACT, WATCH or RESEARCH-MORE. It is made for PMM, product, sales and strategy teams.
 
@@ -46,7 +46,7 @@ Generic deep-research prompts often return confident reports with **hallucinated
 
 ## The skills in detail
 
-### 🔎 `research-analyst`: AI research assistant and research brief generator
+### 🔎 `content-research-analyst`: AI research assistant and research brief generator
 
 **Best for:** content creators, newsletter writers, analysts and consultants. Use it for summarizing and **fact-checking** web articles, industry reports, market research and news, and for turning several sources into one **source-traceable research brief**.
 
@@ -54,7 +54,7 @@ Generic deep-research prompts often return confident reports with **hallucinated
 
 **Extras:** English-first with an optional Chinese or bilingual summary; ignores **prompt injection** hidden in source documents; says plainly when a URL couldn't be opened instead of pretending it read it.
 
-→ [SKILL.md](skills/research-analyst/SKILL.md) · [input template](skills/research-analyst/references/input-template.md) · [eval cases](skills/research-analyst/references/evaluation-cases.md)
+→ [SKILL.md](skills/content-research-analyst/SKILL.md) · [input template](skills/content-research-analyst/references/input-template.md) · [eval cases](skills/content-research-analyst/references/evaluation-cases.md)
 
 ### 🎓 `sociology-deep-research`: literature review and social science deep research
 
@@ -101,7 +101,7 @@ Restart Claude Code. To install one skill, copy only its folder. To share skills
 
 ### Claude.ai or the Claude desktop app
 
-1. Download a zip: [research-analyst.zip](dist/research-analyst.zip) · [sociology-deep-research.zip](dist/sociology-deep-research.zip) · [competitive-market-research.zip](dist/competitive-market-research.zip)
+1. Download a zip: [content-research-analyst.zip](dist/content-research-analyst.zip) · [sociology-deep-research.zip](dist/sociology-deep-research.zip) · [competitive-market-research.zip](dist/competitive-market-research.zip)
 2. Go to **Settings → Capabilities → Skills → Upload skill** and pick the zip.
 3. Turn the skill on and try an example prompt below.
 
@@ -109,7 +109,7 @@ Restart Claude Code. To install one skill, copy only its folder. To share skills
 
 ## Example prompts
 
-**Content research** (`research-analyst`)
+**Content research** (`content-research-analyst`)
 ```text
 Here are three articles on AI adoption in UK marketing teams [paste or attach].
 Build a research brief I can use for a LinkedIn post. English, plus a Chinese summary.
@@ -139,7 +139,7 @@ Map the AI meeting-notes market: 8 players, who is going upmarket, who is going 
 
 ## Compare at a glance
 
-| | research-analyst | sociology-deep-research | competitive-market-research |
+| | content-research-analyst | sociology-deep-research | competitive-market-research |
 |---|---|---|---|
 | Category | General research / fact-checking | Academic deep research / literature review | Market research / competitive intelligence |
 | Best for | Creators, writers, analysts | Students, researchers, policy analysts | PMM, product, sales, strategy |
@@ -177,7 +177,7 @@ Yes, under the MIT license.
 ```
 .claude-plugin/marketplace.json     # Claude Code plugin marketplace manifest
 skills/
-  research-analyst/                 # SKILL.md + references/ (input template, output contract, eval cases)
+  content-research-analyst/                 # SKILL.md + references/ (input template, output contract, eval cases)
   sociology-deep-research/          # SKILL.md
   competitive-market-research/      # SKILL.md
 dist/                               # upload-ready zips for Claude.ai
@@ -209,11 +209,11 @@ License: [MIT](LICENSE)
 
 | 你想做什么 | 用哪个 | 一句话 |
 |---|---|---|
-| 写文章、公众号、Newsletter 之前，先**整理资料、核对事实** | 🔎 `research-analyst` | 通用 **AI 研究助理**：输入文章、报告、新闻，输出每条都带出处的研究简报 |
+| 写文章、公众号、Newsletter 之前，先**整理资料、核对事实** | 🔎 `content-research-analyst` | 通用 **AI 研究助理**：输入文章、报告、新闻，输出每条都带出处的研究简报 |
 | 围绕一个社会议题写**文献综述** | 🎓 `sociology-deep-research` | 社会科学方向的**学术 deep research**：系统性文献综述、论点-证据表、论证图、反方挑战 |
 | 做**竞品分析 / 市场调研**（B2B、SaaS、产品市场） | 📊 `competitive-market-research` | **竞品情报**：竞品画像、销售 battlecard、市场格局、定价拆解、输赢单复盘 |
 
-**三者的区别：** `research-analyst` 最通用、最快，你给什么资料就整理什么；`sociology-deep-research` 是学术型的，会先请你确认研究方向，严格区分描述、相关和因果；`competitive-market-research` 是商业型的，来源分 T1–T5 五级可信度，还会用"镜像 battlecard"从竞争对手的角度反查自己有没有一厢情愿。
+**三者的区别：** `content-research-analyst` 最通用、最快，你给什么资料就整理什么；`sociology-deep-research` 是学术型的，会先请你确认研究方向，严格区分描述、相关和因果；`competitive-market-research` 是商业型的，来源分 T1–T5 五级可信度，还会用"镜像 battlecard"从竞争对手的角度反查自己有没有一厢情愿。
 
 ### 安装
 
