@@ -1,6 +1,6 @@
 ---
 name: positioning-messaging
-description: Write product positioning and a messaging framework (a messaging house) from existing product docs, FAB analysis, personas and competitor research. Use when a PMM, founder or PM needs a positioning statement, value proposition, messaging pillars, a tagline or homepage hero options, elevator pitches, or messaging for a new product, a rebrand or a new market. Based on April Dunford-style positioning: alternatives first, then unique value.
+description: Write product positioning and a messaging framework (a messaging house) from existing product docs, FAB analysis, personas and competitor research. Use when a PMM, founder or PM needs a positioning statement, value proposition, messaging pillars, a tagline or homepage hero options, elevator pitches, or messaging for a new product, a rebrand or a new market. Based on April Dunford-style positioning (alternatives first, then unique value).
 ---
 
 # Positioning & Messaging
