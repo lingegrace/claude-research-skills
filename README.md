@@ -24,14 +24,14 @@ They work in **Claude Code**, **Claude.ai**, the **Claude desktop app**, and any
 
 ## Install
 
-**Claude Code:** add the library once, then install everything or one drawer:
+**Claude Code:** add the library once, then install everything or one folder:
 
 ```
 /plugin marketplace add lingegrace/claude-research-skills
 /plugin install research-skills@lingegrace-research-skills     # all 67 skills
 ```
 
-Each section below shows the command for installing just that drawer.
+Each section below shows the command for installing just that folder.
 
 **Manual install:**
 
