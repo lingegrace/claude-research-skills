@@ -5,7 +5,7 @@ Turns an interview transcript or CSM notes into a result-led case study with rea
 | | |
 |---|---|
 | **You give it** | Customer interview transcript, call notes, CSM or CRM notes, usage metrics |
-| **You get back** | Publishable case study, sales slide and social versions, and an approval list of every quote and number |
+| **You get back** | Publishable case study, sales slide and social versions, an approval list, and optional anonymization (it always asks whether to hide the company and identifying details) |
 | **Search terms** | case study, customer success story, testimonial, customer story, social proof |
 
 It always starts by asking what you're trying to achieve and what you already have, then works through fixed steps. Every claim is traced to your material or labeled as an assumption.
