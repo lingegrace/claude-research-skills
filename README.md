@@ -1,135 +1,198 @@
-# Research Skills for Claude
+# Claude Research Skills: Deep Research, Literature Review & Competitive Analysis
 
-**Evidence-first research skills for Claude.** Each one produces work you can trace back to its sources, keeps "what the source says" apart from "what we infer", and stops to check in with you before going deep.
+[![Claude Skills](https://img.shields.io/badge/Claude-Agent%20Skills-D97757)](https://github.com/lingegrace/claude-research-skills)
+[![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin%20marketplace-222)](#install-in-claude-code-one-command)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+**Three free, open-source [Claude Skills](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) (`SKILL.md`) for research you can trust. They turn Claude into a research analyst that cites its sources, separates fact from interpretation, and never invents numbers or citations.** They work in **Claude Code**, **Claude.ai**, the **Claude desktop app**, and anything that loads Agent Skills.
+
+- 🔎 **[research-analyst](skills/research-analyst/)**: an AI research assistant for creators. Turns articles, industry reports and news into a source-traceable research brief before you write a LinkedIn post, newsletter or blog.
+- 🎓 **[sociology-deep-research](skills/sociology-deep-research/)**: an AI literature review tool for social science. Produces a citation-checked research dossier with claim–evidence tables, an argument map and an adversarial critique.
+- 📊 **[competitive-market-research](skills/competitive-market-research/)**: an AI competitive intelligence analyst for B2B product marketing (PMM) and strategy teams. Builds competitor profiles, sales battlecards, market landscapes, pricing teardowns and win-loss analysis.
 
 [中文说明 ↓](#中文说明)
 
-| Skill | What it does | Use it when you want… |
-|---|---|---|
-| [`research-analyst`](skills/research-analyst/SKILL.md) | Turns articles, reports and news into a traceable **Research Brief**: source register, claim table, conflicts, creator-ready insights and a content handoff. | to research sources before writing a post, newsletter or article |
-| [`sociology-deep-research`](skills/sociology-deep-research/SKILL.md) | Builds a **sociological research dossier**: scoping, a human checkpoint, source and claim ledgers, an argument map, an adversarial critique and graded insights. | a literature review or deep, source-traceable analysis of a social phenomenon |
-| [`competitive-market-research`](skills/competitive-market-research/SKILL.md) | Builds **B2B competitive intelligence**: source tiers T1–T5, signal clusters, a "mirror battlecard" bias check and FACT / READ / BET grading. | a competitor profile, battlecard, market landscape, pricing teardown or win-loss read |
+---
 
-All three share the same rules: **never invent sources, numbers or quotes**, check that a source exists separately from checking that it supports the claim, and say plainly what the evidence does *not* establish.
+## Why these skills? (fixing AI research hallucinations)
+
+Most "deep research" prompts give you fluent text with invented statistics, fake citations, and causal claims the evidence never supported. These skills build guardrails into every run:
+
+| Problem with ordinary AI research | What these skills do instead |
+|---|---|
+| Hallucinated sources, DOIs, quotes and numbers | **Never invent**: a missing field is marked `Not provided` / `Not verified` |
+| "The source exists" treated as "the source supports the claim" | **Two separate checks**: source identity (`VERIFIED`…) and claim support (`DIRECT` / `PARTIAL` / `NO_SUPPORT`) |
+| Correlation written up as causation | Each **claim type** (descriptive, associational, causal, mechanism…) needs matching evidence |
+| One press release echoed by 12 outlets counted as 12 confirmations | **Study / signal clusters** count independent evidence, not URLs |
+| AI runs off in the wrong direction | **Human-in-the-loop checkpoint** after scoping, before deep research |
+| Confirmation bias, or telling the sponsor what they want to hear | **Adversarial critique** and a **mirror battlecard** pass |
+
+---
+
+## The skills
+
+### 1. `research-analyst`: source-traceable research brief for content creators
+
+**Use it for:** summarizing and fact-checking articles, reports and news before you write.
+**You get:** an 8-section Markdown Research Brief: executive summary, source register, claim–evidence table (claim IDs + source locators), cross-source synthesis and conflicts, creator-ready insights with the "overclaim to avoid", research gaps, and a content handoff.
+**Also:** English-first with an optional Chinese or bilingual summary; ignores prompt injection hidden inside source documents; keeps publication date, event date and data period apart.
+→ [Read the skill](skills/research-analyst/SKILL.md)
+
+### 2. `sociology-deep-research`: AI literature review and research dossier
+
+**Use it for:** literature reviews, a systematic-style synthesis, or an evidence map of a social phenomenon (inequality, platforms, labor, gender, AI and society…).
+**You get:** a research brief, a search log, `sources.csv`, `claims.csv`, `evidence.csv`, `arguments.csv`, an adversarial critique, insights graded as *Evidence-supported synthesis / Plausible interpretation / New hypothesis*, a 10-point scorecard, and a readiness gate.
+**Modes:** `SCOPING` (quick brief) · `SYNTHESIS` (full dossier) · `PROTOCOL` (research plan) · `AUDIT` (check an existing report).
+→ [Read the skill](skills/sociology-deep-research/SKILL.md)
+
+### 3. `competitive-market-research`: competitive intelligence and battlecards
+
+**Use it for:** competitor analysis, sales battlecards, market maps, SaaS pricing and packaging teardowns, feature-parity checks, and win-loss diagnostics.
+**You get:** sources graded in **tiers T1–T5** (SEC filings and pricing pages down to vendor marketing), signal-cluster accounting, a **mirror battlecard** (the competitor's view of *you*), findings graded **FACT / READ / BET**, and implications graded **ACT / WATCH / RESEARCH-MORE** with tripwires.
+**Modes:** `SCOUT` · `PROFILE` · `BATTLECARD` · `LANDSCAPE` · `WIN-LOSS`.
+→ [Read the skill](skills/competitive-market-research/SKILL.md)
 
 ---
 
 ## Install
 
-### Option A — Claude Code (recommended)
-
-Inside Claude Code, add this repo as a plugin marketplace and install:
+### Install in Claude Code (one command)
 
 ```
-/plugin marketplace add lingegrace/research-skills
+/plugin marketplace add lingegrace/claude-research-skills
 /plugin install research-skills@lingegrace-research-skills
 ```
 
-All three skills are then available. Claude picks one automatically when your request matches, or you can ask for it by name (e.g. *"use sociology-deep-research on …"*).
+That's it. Claude picks the right skill automatically when your request matches, or you can call one by name: *"use competitive-market-research to build a battlecard for …"*.
 
-### Option B — Copy into your skills folder (Claude Code)
+### Manual install (Claude Code)
 
 ```bash
-git clone https://github.com/lingegrace/research-skills.git
+git clone https://github.com/lingegrace/claude-research-skills.git
 mkdir -p ~/.claude/skills
-cp -R research-skills/skills/* ~/.claude/skills/
+cp -R claude-research-skills/skills/* ~/.claude/skills/
 ```
 
-Restart Claude Code. To install only one skill, copy only that folder.
+Restart Claude Code. To install only one skill, copy just that folder. To share skills with your team, copy them into the project's `.claude/skills/` instead.
 
-### Option C — Claude.ai or the Claude desktop app
+### Install in Claude.ai or the Claude desktop app
 
-1. Download the zip for the skill you want from [`dist/`](dist/):
-   [`research-analyst.zip`](dist/research-analyst.zip) ·
-   [`sociology-deep-research.zip`](dist/sociology-deep-research.zip) ·
-   [`competitive-market-research.zip`](dist/competitive-market-research.zip)
-2. In Claude, open **Settings → Capabilities → Skills** (wording may vary), click **Upload skill**, and pick the zip.
-3. Turn the skill on and try one of the example prompts below.
+1. Download a zip: [research-analyst.zip](dist/research-analyst.zip) · [sociology-deep-research.zip](dist/sociology-deep-research.zip) · [competitive-market-research.zip](dist/competitive-market-research.zip)
+2. Open **Settings → Capabilities → Skills**, click **Upload skill**, and pick the zip.
+3. Turn the skill on and try an example prompt below.
 
-Custom skills need a plan where Skills are enabled.
+Custom skills need a Claude plan with Skills enabled.
 
 ---
 
 ## Example prompts
 
-**research-analyst**
-> Here are three articles on AI adoption in UK marketing teams [paste or attach]. Build me a research brief I can use for a LinkedIn post. English, plus a Chinese summary.
+```text
+Here are three articles on AI adoption in UK marketing teams [paste or attach].
+Build a research brief I can use for a LinkedIn post. English, plus a Chinese summary.
+```
 
-**sociology-deep-research**
-> Does platform gig work weaken or reshape class identity among young urban workers in China? I want a source-traceable literature synthesis.
+```text
+Does platform gig work reshape class identity among young urban workers in China?
+I want a source-traceable literature synthesis.
+```
 
-**competitive-market-research**
-> Should we match Competitor X's seat-based pricing for the mid-market segment in H1? Build a PROFILE-mode dossier.
+```text
+Should we match Competitor X's seat-based pricing for the mid-market segment in H1?
+Build a PROFILE-mode competitive dossier.
+```
+
+```text
+Make a sales battlecard for us vs. Competitor Y in enterprise HR software.
+```
 
 ---
 
-## What you get
+## Compare the three skills
 
 | | research-analyst | sociology-deep-research | competitive-market-research |
 |---|---|---|---|
-| Stops to check in with you | Only if something is unclear | Yes, after scoping (Stage H) | Yes, stakeholder checkpoint (Stage H) |
-| Modes | — | `SCOPING` · `SYNTHESIS` · `PROTOCOL` · `AUDIT` | `SCOUT` · `PROFILE` · `BATTLECARD` · `LANDSCAPE` · `WIN-LOSS` |
-| Main output | Markdown Research Brief (8 sections) | Dossier + `sources/claims/evidence/arguments.csv` | Dossier or battlecard + the same CSV ledgers |
-| Bias check | Claim classification | Adversarial critique pass | Mirror battlecard + sponsor-bias check |
-| Insight grading | Strong / Moderate / Limited | SYNTHESIS / INTERPRETATION / HYPOTHESIS | FACT / READ / BET + ACT / WATCH / RESEARCH-MORE |
+| Best for | Creators, writers, analysts | Students, researchers, policy analysts | PMM, product, sales, strategy |
+| Checks in with you | Only if something is unclear | Yes, after scoping | Yes, stakeholder checkpoint |
+| Output | Research Brief (Markdown) | Dossier + CSV ledgers | Dossier or battlecard + CSV ledgers |
+| Bias check | Claim classification | Adversarial critique | Mirror battlecard + sponsor-bias check |
+| Grading | Strong / Moderate / Limited | Synthesis / Interpretation / Hypothesis | FACT / READ / BET · ACT / WATCH / RESEARCH-MORE |
 
-## Limitations
+---
 
-- A skill does not give Claude web access. If a URL can't be opened in your environment, paste the text or upload the PDF.
-- "Audited for the checks listed" is not the same as "error-free". Check important claims against the original sources before you publish.
-- No executable audit scripts are bundled yet (see section 14 of each deep-research skill).
+## FAQ
+
+**What is a Claude Skill?**
+A folder with a `SKILL.md` file. Claude loads its instructions when a task matches its description. Skills work in Claude Code, Claude.ai, the desktop app and the Claude API. See Anthropic's [Agent Skills docs](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview).
+
+**Do these skills browse the web?**
+No. A skill doesn't add web access. If your Claude environment has web search, the skills use it. If not, paste the text or upload the PDFs, and the skill will say clearly which sources it could not open.
+
+**Can I use them for academic work?**
+Yes. `sociology-deep-research` is built for literature reviews and source-traceable analysis. Still check key citations against the originals: the skill reports "audited for the checks listed", never "hallucination-free".
+
+**Do they work with other models or agents?**
+`SKILL.md` is plain Markdown. Any agent that supports the Agent Skills format can load it, and you can paste the instructions into any LLM as a system prompt.
+
+**Are they free?**
+Yes, under the MIT license.
+
+---
 
 ## Repository layout
 
 ```
-.claude-plugin/marketplace.json   # Claude Code plugin marketplace manifest
+.claude-plugin/marketplace.json     # Claude Code plugin marketplace manifest
 skills/
-  research-analyst/
-    SKILL.md
-    references/                   # input template, output contract, eval cases
-  sociology-deep-research/SKILL.md
-  competitive-market-research/SKILL.md
-dist/                             # upload-ready zips for Claude.ai
+  research-analyst/                 # SKILL.md + references/ (template, output contract, evals)
+  sociology-deep-research/          # SKILL.md
+  competitive-market-research/      # SKILL.md
+dist/                               # upload-ready zips for Claude.ai
 ```
 
 ## Contributing
 
-Issues and pull requests are welcome, especially new evaluation cases or worked examples. If you change a `SKILL.md`, rebuild its zip:
+Issues and PRs are welcome, especially new evaluation cases, worked examples and translations. If you edit a `SKILL.md`, rebuild its zip:
 
 ```bash
-cd skills && zip -r ../dist/<skill-name>.zip <skill-name>
+cd skills && zip -r ../dist/<skill-name>.zip <skill-name> -x '*/README.md'
 ```
 
-## License
+⭐ **If these skills help you, please star the repo** so other people can find it.
 
-[MIT](LICENSE) © 2026 Linge (Grace) Guo · [Website](https://lingegrace.github.io/work-from-home-/)
+## Author
+
+Built by **Linge (Grace) Guo**, a sociologist (UCL, Oxford MSc) working on AI companions, AI deception and platform governance. [Website](https://lingegrace.github.io/work-from-home-/) · [LinkedIn newsletter](https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7422191016994217984)
+
+License: [MIT](LICENSE)
 
 ---
 
 ## 中文说明
 
-**为 Claude 打造的「证据优先」研究类 Skill。** 每个结论都能追溯到来源；"来源说了什么"和"我们推断了什么"分开写；深入研究之前，会先停下来跟你确认方向。
+**三个免费开源的 Claude Skill（`SKILL.md`），让 Claude 变成一个靠谱的研究助理：结论都有出处，事实和观点分开写，绝不编造数据或引用。** 支持 Claude Code、Claude.ai 和 Claude 桌面版。
 
-| Skill | 作用 | 适用场景 |
-|---|---|---|
-| `research-analyst` | 把文章、报告、新闻整理成可追溯的研究简报（来源登记、论点表、冲突对比、创作者洞察、内容交接）。 | 写帖子、Newsletter、文章之前先把资料研究清楚 |
-| `sociology-deep-research` | 社会学研究档案：先划定范围，再请你确认方向，之后建来源和论点台账、画论证图，做一轮反方挑战，最后给洞察分级。 | 社会议题的文献综述，或需要每条结论都有出处的深度分析 |
-| `competitive-market-research` | B2B 竞品情报：来源分 T1–T5 五级，同源信号归为一簇，用"镜像 battlecard"检查偏见，结论按 FACT / READ / BET 分级。 | 竞品画像、battlecard、市场格局、定价拆解、输赢单复盘 |
+- 🔎 **research-analyst**（AI 研究助理 / 资料整理）：把文章、行业报告、新闻整理成可追溯的研究简报，写 LinkedIn、公众号、Newsletter 之前先把事实核对清楚。
+- 🎓 **sociology-deep-research**（AI 文献综述 / 社会学研究）：产出带引用核查的研究档案，包括论点-证据表、论证图和反方挑战，适合写论文、做文献综述和政策分析。
+- 📊 **competitive-market-research**（AI 竞品分析 / 市场调研）：为 B2B 产品市场（PMM）和战略团队做竞品画像、销售 battlecard、市场格局、定价拆解和输赢单分析。
 
 ### 安装
 
-**Claude Code（推荐）：**
+**Claude Code（一行命令）：**
 
 ```
-/plugin marketplace add lingegrace/research-skills
+/plugin marketplace add lingegrace/claude-research-skills
 /plugin install research-skills@lingegrace-research-skills
 ```
 
-**手动复制：** `git clone` 本仓库后，把 `skills/` 里的文件夹复制到 `~/.claude/skills/`，然后重启 Claude Code。
+**手动安装：** `git clone` 本仓库后，把 `skills/` 下的文件夹复制到 `~/.claude/skills/`，再重启 Claude Code。
 
-**Claude.ai / 桌面版：** 从 [`dist/`](dist/) 下载对应的 zip，在 **设置 → Capabilities → Skills** 里上传，再打开开关即可。
+**Claude.ai / 桌面版：** 从 [`dist/`](dist/) 下载对应的 zip，在 **设置 → Capabilities → Skills** 里上传，再打开开关。
 
-### 注意
+### 常见问题
 
-- Skill 本身不提供联网能力。打不开的链接，请直接粘贴原文或上传 PDF。
-- 发布前，请把重要论点再和原始来源核对一遍。
+- **会联网吗？** Skill 本身不提供联网能力。打不开的链接，请直接粘贴原文或上传 PDF。
+- **能用来写论文吗？** 可以，但发布前请把关键引用再和原文核对一遍。
+- **免费吗？** 免费，MIT 开源协议。
+
+觉得好用的话，欢迎点个 ⭐ Star，让更多人看到。
