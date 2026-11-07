@@ -1,0 +1,24 @@
+{
+  "name": "lingegrace-research-skills",
+  "owner": {
+    "name": "Linge (Grace) Guo",
+    "url": "https://github.com/lingegrace"
+  },
+  "metadata": {
+    "description": "Evidence-first research skills for Claude: source-traceable research briefs, sociology dossiers, and competitive market intelligence.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "research-skills",
+      "description": "Three research skills: research-analyst, sociology-deep-research, competitive-market-research.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/research-analyst",
+        "./skills/sociology-deep-research",
+        "./skills/competitive-market-research"
+      ]
+    }
+  ]
+}
