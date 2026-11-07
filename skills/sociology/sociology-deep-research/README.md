@@ -12,4 +12,4 @@ A Claude Skill for **doing sociology, not just summarizing it**. It produces a s
 
 - Skill instructions: [SKILL.md](SKILL.md)
 
-Install all three: `/plugin marketplace add lingegrace/claude-research-skills` then `/plugin install research-skills@lingegrace-research-skills` in Claude Code, or upload [sociology-deep-research.zip](../../dist/sociology-deep-research.zip) in Claude.ai under Settings → Capabilities → Skills. See the [main README](../../README.md).
+Install all three: `/plugin marketplace add lingegrace/claude-research-skills` then `/plugin install research-skills@lingegrace-research-skills` in Claude Code, or upload [sociology-deep-research.zip](../../../dist/sociology-deep-research.zip) in Claude.ai under Settings → Capabilities → Skills. See the [main README](../../../README.md).

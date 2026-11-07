@@ -10,4 +10,4 @@ A Claude Skill for **B2B competitive intelligence that doesn't just repeat vendo
 
 - Skill instructions: [SKILL.md](SKILL.md)
 
-Install all three: `/plugin marketplace add lingegrace/claude-research-skills` then `/plugin install research-skills@lingegrace-research-skills` in Claude Code, or upload [competitive-market-research.zip](../../dist/competitive-market-research.zip) in Claude.ai under Settings → Capabilities → Skills. See the [main README](../../README.md).
+Install all three: `/plugin marketplace add lingegrace/claude-research-skills` then `/plugin install research-skills@lingegrace-research-skills` in Claude Code, or upload [competitive-market-research.zip](../../../dist/competitive-market-research.zip) in Claude.ai under Settings → Capabilities → Skills. See the [main README](../../../README.md).

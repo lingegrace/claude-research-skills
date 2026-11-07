@@ -5,19 +5,70 @@
     "url": "https://github.com/lingegrace/claude-research-skills"
   },
   "metadata": {
-    "description": "Evidence-first Claude research skills: deep research, literature review (sociology / social science), and competitor analysis / market research — citation-backed, no hallucinated data.",
-    "version": "1.0.0"
+    "description": "Evidence-first Claude skills for product managers, product marketers and researchers: FAB product value, positioning, personas, launch kits, competitor analysis, deep research, literature review, thematic analysis and fact-checking.",
+    "version": "2.0.0"
   },
   "plugins": [
     {
       "name": "research-skills",
-      "description": "content-research-analyst (content research brief), sociology-deep-research (literature review & deep research), competitive-market-research (competitor analysis, battlecards, market landscape).",
+      "description": "Everything: all research, sociology and product-marketing skills in this repo.",
       "source": "./",
       "strict": false,
       "skills": [
-        "./skills/content-research-analyst",
-        "./skills/sociology-deep-research",
-        "./skills/competitive-market-research"
+        "./skills/research/content-research-analyst",
+        "./skills/research/fact-check-draft",
+        "./skills/sociology/interview-guide",
+        "./skills/sociology/quantitative-analysis",
+        "./skills/sociology/research-question-grill",
+        "./skills/sociology/sociology-deep-research",
+        "./skills/sociology/thematic-analysis",
+        "./skills/product-marketing/ai-product-audit",
+        "./skills/product-marketing/competitive-market-research",
+        "./skills/product-marketing/customer-case-study",
+        "./skills/product-marketing/customer-review-mining",
+        "./skills/product-marketing/feature-launch-kit",
+        "./skills/product-marketing/positioning-messaging",
+        "./skills/product-marketing/product-value-fab",
+        "./skills/product-marketing/user-persona-builder"
+      ]
+    },
+    {
+      "name": "product-marketing-skills",
+      "description": "For PMs and PMMs: product value (FAB), positioning & messaging, personas & JTBD, customer review mining, launch kits, case studies, AI product audit, competitor analysis.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/product-marketing/ai-product-audit",
+        "./skills/product-marketing/competitive-market-research",
+        "./skills/product-marketing/customer-case-study",
+        "./skills/product-marketing/customer-review-mining",
+        "./skills/product-marketing/feature-launch-kit",
+        "./skills/product-marketing/positioning-messaging",
+        "./skills/product-marketing/product-value-fab",
+        "./skills/product-marketing/user-persona-builder"
+      ]
+    },
+    {
+      "name": "sociology-research-skills",
+      "description": "For social science research: research question grill, interview guide, thematic analysis (Braun & Clarke), quantitative analysis, sociology deep research.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/sociology/interview-guide",
+        "./skills/sociology/quantitative-analysis",
+        "./skills/sociology/research-question-grill",
+        "./skills/sociology/sociology-deep-research",
+        "./skills/sociology/thematic-analysis"
+      ]
+    },
+    {
+      "name": "research-writing-skills",
+      "description": "For anyone who writes from sources: content research brief and draft fact-checking.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/research/content-research-analyst",
+        "./skills/research/fact-check-draft"
       ]
     }
   ]

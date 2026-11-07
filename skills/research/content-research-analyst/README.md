@@ -13,4 +13,4 @@ A Claude Skill that turns web articles, industry reports, market research and ne
 - Output contract: [references/output-contract.md](references/output-contract.md)
 - Acceptance tests: [references/evaluation-cases.md](references/evaluation-cases.md)
 
-Install all three: `/plugin marketplace add lingegrace/claude-research-skills` then `/plugin install research-skills@lingegrace-research-skills` in Claude Code, or upload [content-research-analyst.zip](../../dist/content-research-analyst.zip) in Claude.ai under Settings → Capabilities → Skills. See the [main README](../../README.md).
+Install all three: `/plugin marketplace add lingegrace/claude-research-skills` then `/plugin install research-skills@lingegrace-research-skills` in Claude Code, or upload [content-research-analyst.zip](../../../dist/content-research-analyst.zip) in Claude.ai under Settings → Capabilities → Skills. See the [main README](../../../README.md).
