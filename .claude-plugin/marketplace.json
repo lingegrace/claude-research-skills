@@ -5,13 +5,13 @@
     "url": "https://github.com/lingegrace/claude-research-skills"
   },
   "metadata": {
-    "description": "Evidence-first research skills for Claude: source-traceable research briefs, sociology dossiers, and competitive market intelligence.",
+    "description": "Evidence-first Claude research skills: deep research, literature review (sociology / social science), and competitor analysis / market research — citation-backed, no hallucinated data.",
     "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "research-skills",
-      "description": "Three research skills: research-analyst, sociology-deep-research, competitive-market-research.",
+      "description": "research-analyst (content research brief), sociology-deep-research (literature review & deep research), competitive-market-research (competitor analysis, battlecards, market landscape).",
       "source": "./",
       "strict": false,
       "skills": [
