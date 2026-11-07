@@ -17,6 +17,8 @@ Every skill works the same way:
 
 They work in **Claude Code**, **Claude.ai**, the **Claude desktop app**, and any agent that loads Agent Skills.
 
+🌐 **Browse the catalog, read the lessons on writing skills, and see what's coming: [Grace's Skill Library](https://lingegrace.github.io/skills/)**
+
 [中文说明 ↓](#中文说明)
 
 ---
@@ -159,7 +161,7 @@ cd skills/<section> && zip -r ../../dist/<skill-name>.zip <skill-name> -x '*/REA
 
 ## Author
 
-Built by **Linge (Grace) Guo**, a sociologist (UCL, Oxford MSc) working at the intersection of AI, products and society. [Website](https://lingegrace.github.io/work-from-home-/) · [Newsletter: Signals Across Markets](https://www.linkedin.com/newsletters/7422191016994217984/)
+Built by **Linge (Grace) Guo**, a sociologist (UCL, Oxford MSc) working at the intersection of AI, products and society. [Skill Library](https://lingegrace.github.io/skills/) · [Website](https://lingegrace.github.io/work-from-home-/) · [Newsletter: Signals Across Markets](https://www.linkedin.com/newsletters/7422191016994217984/)
 
 License: [MIT](LICENSE)
 
