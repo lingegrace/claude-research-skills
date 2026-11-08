@@ -47,39 +47,46 @@ cp -R claude-research-skills/skills/*/* ~/.claude/skills/
 
 ## All skills
 
-### 🔎 Research & Intelligence
+### 🎓 Social Science Research
 
-Find, check and analyse information, then form a judgment. · Install: `/plugin install research-intelligence-skills@lingegrace-research-skills`
+Research questions, literature reviews, interviews, thematic and quantitative analysis. · Install: `/plugin install social-science-research-skills@lingegrace-research-skills`
 
-| Skill | What it is | You give it | You get back |
+| Skill | What it is | Input | Output |
 |---|---|---|---|
-| [`competitor-analysis`](skills/research/competitor-analysis/) | Competitor analysis & sales battlecards | A business question about competitors (pricing, positioning, win-loss) | A competitor profile or battlecard with tiered sources, a mirror battlecard, FACT/READ/BET findings and ACT/WATCH/RESEARCH-MORE implications |
-| [`content-research-analyst`](skills/research/content-research-analyst/) | Content research & fact-checking | Articles, industry reports, news, PDFs or pasted text you've collected | An 8-section research brief: source register, claim–evidence table, conflicts, creator insights, gaps and a content handoff |
-| [`deep-research`](skills/research/deep-research/) | Cited research report on any question | A business, policy or general question, plus any starting sources you already have | A research report with a short answer up front, findings per sub-question, a claim–evidence table, confidence ratings, counterevidence, open questions, a source list and what couldn't be accessed |
-| [`fact-check-draft`](skills/research/fact-check-draft/) | Fact-check a draft | A finished draft (article, post, report, PRD, copy) plus its sources | Claim-by-claim verdicts with source locations, suggested fixes, and a corrected draft |
-| [`interview-guide`](skills/research/interview-guide/) | Qualitative interview guide | A research question or brief, participant details, interview length | An interview guide with consent script, warm-up, themed questions and probes, closing, interviewer notes, and bias-check changes |
-| [`literature-review`](skills/research/literature-review/) | Literature review and synthesis matrix | A research question plus PDFs, reading notes or a reading list, or permission to search | Screening log with inclusion and exclusion criteria, literature matrix, synthesis organised by debate, research gap and a draft literature review section with traceable citations |
-| [`market-research`](skills/research/market-research/) | Market sizing and market analysis brief | A market or product category, the decision you face (enter, price, which segment), and any reports or data you have | Market definition and segments, top-down and bottom-up TAM/SAM/SOM with every assumption shown, PESTEL drivers, Five Forces, key players, implications and what to validate next |
-| [`quantitative-analysis`](skills/research/quantitative-analysis/) | Survey & quantitative analysis | A dataset (CSV, Excel, SPSS, Stata) plus a research question | Cleaning log, descriptives, model results with CIs, assumption checks, plain-language interpretation, limitations and code |
-| [`research-question-grill`](skills/research/research-question-grill/) | Research question interview | A topic or rough idea | A research question brief: main and sub-questions, scope, concepts, falsifier, method fit, ready for sociology-deep-research |
-| [`sociology-deep-research`](skills/research/sociology-deep-research/) | Sociology deep research & literature review | A social science research question | A source-traceable research dossier: brief, search log, source/claim/evidence/argument ledgers, adversarial critique, graded insights, scorecard |
-| [`survey-design`](skills/research/survey-design/) | Survey and questionnaire design | A research or business question, who you want to survey, and your constraints (length, channel) | A questionnaire with sections, exact wording, response scales and skip logic, a list of bias fixes, a pilot checklist and an analysis plan mapping every question to the research question |
-| [`thematic-analysis`](skills/research/thematic-analysis/) | Thematic analysis (Braun & Clarke) | Interview transcripts, focus groups, open-ended survey answers, field notes | Codebook, thematic map, defined themes with exact quotes, methods paragraph, reflexivity note and audit trail |
-| [`topic-discovery`](skills/research/topic-discovery/) | Content ideas and research topics, ranked | Your niche or field, your audience, and any newsletters, reports, competitor content, comments or search data you have | 10–20 ranked topics, each with the audience question, evidence of demand or gap, angle and difficulty, plus a question bank |
-| [`trend-research`](skills/research/trend-research/) | Trend analysis and horizon scanning report | A domain, a time horizon, and any news, reports, data or observations you have | Trend report with signals, trends and drivers, each with evidence, maturity, Three Horizons placement and implications, plus a watch-list of tripwires and a signal log |
+| [`interview-guide`](skills/social-science/interview-guide/) | Qualitative interview guide | A research question or brief, participant details, interview length | An interview guide with consent script, warm-up, themed questions and probes, closing, interviewer notes, and bias-check changes |
+| [`literature-review`](skills/social-science/literature-review/) | Literature review and synthesis matrix | A research question plus PDFs, reading notes or a reading list, or permission to search | Screening log with inclusion and exclusion criteria, literature matrix, synthesis organised by debate, research gap and a draft literature review section with traceable citations |
+| [`quantitative-analysis`](skills/social-science/quantitative-analysis/) | Survey & quantitative analysis | A dataset (CSV, Excel, SPSS, Stata) plus a research question | Cleaning log, descriptives, model results with CIs, assumption checks, plain-language interpretation, limitations and code |
+| [`research-question-grill`](skills/social-science/research-question-grill/) | Research question interview | A topic or rough idea | A research question brief: main and sub-questions, scope, concepts, falsifier, method fit, ready for sociology-deep-research |
+| [`sociology-deep-research`](skills/social-science/sociology-deep-research/) | Sociology deep research & literature review | A social science research question | A source-traceable research dossier: brief, search log, source/claim/evidence/argument ledgers, adversarial critique, graded insights, scorecard |
+| [`survey-design`](skills/social-science/survey-design/) | Survey and questionnaire design | A research or business question, who you want to survey, and your constraints (length, channel) | A questionnaire with sections, exact wording, response scales and skip logic, a list of bias fixes, a pilot checklist and an analysis plan mapping every question to the research question |
+| [`thematic-analysis`](skills/social-science/thematic-analysis/) | Thematic analysis (Braun & Clarke) | Interview transcripts, focus groups, open-ended survey answers, field notes | Codebook, thematic map, defined themes with exact quotes, methods paragraph, reflexivity note and audit trail |
 
-### ✍️ Content & Communication
+### 📈 Market Research
 
-You know what to say. Turn it into writing that fits the reader. · Install: `/plugin install writing-skills@lingegrace-research-skills`
+Deep research, market sizing, competitors, trends and topics, with sources you can check. · Install: `/plugin install market-research-skills@lingegrace-research-skills`
 
-| Skill | What it is | You give it | You get back |
+| Skill | What it is | Input | Output |
+|---|---|---|---|
+| [`competitor-analysis`](skills/market-research/competitor-analysis/) | Competitor analysis & sales battlecards | A business question about competitors (pricing, positioning, win-loss) | A competitor profile or battlecard with tiered sources, a mirror battlecard, FACT/READ/BET findings and ACT/WATCH/RESEARCH-MORE implications |
+| [`deep-research`](skills/market-research/deep-research/) | Cited research report on any question | A business, policy or general question, plus any starting sources you already have | A research report with a short answer up front, findings per sub-question, a claim–evidence table, confidence ratings, counterevidence, open questions, a source list and what couldn't be accessed |
+| [`market-research`](skills/market-research/market-research/) | Market sizing and market analysis brief | A market or product category, the decision you face (enter, price, which segment), and any reports or data you have | Market definition and segments, top-down and bottom-up TAM/SAM/SOM with every assumption shown, PESTEL drivers, Five Forces, key players, implications and what to validate next |
+| [`topic-discovery`](skills/market-research/topic-discovery/) | Content ideas and research topics, ranked | Your niche or field, your audience, and any newsletters, reports, competitor content, comments or search data you have | 10–20 ranked topics, each with the audience question, evidence of demand or gap, angle and difficulty, plus a question bank |
+| [`trend-research`](skills/market-research/trend-research/) | Trend analysis and horizon scanning report | A domain, a time horizon, and any news, reports, data or observations you have | Trend report with signals, trends and drivers, each with evidence, maturity, Three Horizons placement and implications, plus a watch-list of tripwires and a signal log |
+
+### ✍️ Writing, Editing & Social Media
+
+Research briefs, fact-checks, your own voice, LinkedIn, newsletters and academic writing. · Install: `/plugin install writing-skills@lingegrace-research-skills`
+
+| Skill | What it is | Input | Output |
 |---|---|---|---|
 | [`abstract-writer`](skills/writing/abstract-writer/) | Abstract writer for papers and theses | Paper draft, thesis or its sections, the word limit and the journal or university guidelines | Structured and unstructured abstract versions with word counts, move map, keywords, one-sentence plain-language summary, gaps |
 | [`academic-editing`](skills/writing/academic-editing/) | Academic English editing for theses and papers | Thesis chapter, paper draft or essay paragraphs, plus the target journal or degree level and citation style | Edited text, change log by category (clarity, concision, hedging, signposting, grammar), recurring error patterns, argument flow comments |
 | [`citation-formatter`](skills/writing/citation-formatter/) | Reference list formatter and citation checker | A messy reference list, in-text citations or the full manuscript, and the target style | Formatted reference list, in-text citation cross-check, list of entries with missing information, summary of changes |
+| [`content-research-analyst`](skills/writing/content-research-analyst/) | Content research & fact-checking | Articles, industry reports, news, PDFs or pasted text you've collected | An 8-section research brief: source register, claim–evidence table, conflicts, creator insights, gaps and a content handoff |
 | [`copy-editor`](skills/writing/copy-editor/) | Copy edit with a change log | A near-final draft and, optionally, a house style guide or AP, Chicago or APA | A clean copy, a change log (before, after, reason), a style sheet of decisions, and author queries |
 | [`ethics-application`](skills/writing/ethics-application/) | Research ethics application and consent form drafts | Your study plan or proposal, and your institution's ethics form or guidance if you have it | Draft answers for each ethics section, risk and mitigation table, participant information sheet, consent form, open issues |
 | [`executive-writing`](skills/writing/executive-writing/) | Executive summary and BLUF emails | Meeting notes, a long status update, an analysis, or an email thread | An executive email or update with the bottom line, explicit ask and three supporting points, plus one-paragraph and one-line versions |
+| [`fact-check-draft`](skills/writing/fact-check-draft/) | Fact-check a draft | A finished draft (article, post, report, PRD, copy) plus its sources | Claim-by-claim verdicts with source locations, suggested fixes, and a corrected draft |
 | [`human-writing`](skills/writing/human-writing/) | Make AI text sound human | A draft email, essay, post, report or bio that sounds generic or machine-written | A rewrite that sounds like a person, a change log with the pattern behind each edit, and claims flagged as needing a source |
 | [`interview-to-article`](skills/writing/interview-to-article/) | Turn interview transcripts into articles | An interview transcript (expert, customer, founder) and what the article is for | A feature article or Q&A, headline options, a quote-approval list with transcript locations, and open questions for the interviewee |
 | [`linkedin-writer`](skills/writing/linkedin-writer/) | Write LinkedIn posts from notes | An idea, meeting or reading notes, an article, a research brief, and your goal (reach, authority, leads) | Three post options with different hooks, a suggested first comment for each, a fact check, and questions for real stats or stories |
@@ -90,11 +97,11 @@ You know what to say. Turn it into writing that fits the reader. · Install: `/p
 | [`peer-review-response`](skills/writing/peer-review-response/) | Response to reviewers letter writer | Reviewer reports, editor's decision letter, examiner comments, your manuscript or revised draft | Point-by-point response letter, cover note to the editor, list of points needing your decision, revision checklist |
 | [`thesis-chapter-review`](skills/writing/thesis-chapter-review/) | Thesis and dissertation chapter feedback | A thesis or dissertation chapter draft, and your marking criteria or rubric if you have it | Scores per criterion with evidence, strengths, top 5 priority fixes, paragraph-level comments, next-draft plan |
 
-### 🗂 Work & Documents
+### 🗂 Meetings, Memos & Reports
 
-Meetings, reports, memos and SOPs, without the busywork. · Install: `/plugin install work-skills@lingegrace-research-skills`
+Meeting actions, decision memos, weekly reports, document reviews and SOPs. · Install: `/plugin install work-skills@lingegrace-research-skills`
 
-| Skill | What it is | You give it | You get back |
+| Skill | What it is | Input | Output |
 |---|---|---|---|
 | [`decision-memo`](skills/work/decision-memo/) | Decision memo with options and recommendation | Research, analysis, meeting notes, a Slack debate, data on a decision | A decision memo: context, the decision needed, options with pros/cons/risks, recommendation, what would change it, next steps and an evidence log |
 | [`document-review`](skills/work/document-review/) | Review a draft document before sending | A work document (proposal, report, plan, policy, deck text) plus what it's for and who reads it | Prioritised comments (blocking / important / nice-to-have) on purpose fit, structure, evidence, clarity, risks and missing pieces, a claims check and a suggested revised outline |
@@ -102,11 +109,11 @@ Meetings, reports, memos and SOPs, without the busywork. · Install: `/plugin in
 | [`sop-builder`](skills/work/sop-builder/) | Write an SOP from process notes | A description, screen-recording transcript, Loom notes, or rough notes of how a process is done | A standard operating procedure (purpose, scope, roles, SIPOC, steps with owners and checks, common mistakes, open questions) plus a one-page checklist |
 | [`weekly-report`](skills/work/weekly-report/) | Weekly status report for your manager | Task lists, notes, tickets, commits, chat messages, calendar from the week | A weekly report (bottom line, progress, plans, problems and asks, metrics if provided) plus a 3-line version for chat |
 
-### 🎓 Learning & Practice
+### 📚 Learning & Exam Prep
 
-Tutors, active recall, exam prep and interview practice. · Install: `/plugin install learning-skills@lingegrace-research-skills`
+Tutors, active recall, IELTS, study plans, interview practice and CV reviews. · Install: `/plugin install learning-skills@lingegrace-research-skills`
 
-| Skill | What it is | You give it | You get back |
+| Skill | What it is | Input | Output |
 |---|---|---|---|
 | [`active-recall`](skills/learning/active-recall/) | Flashcards and self-quiz from your notes | Lecture notes, slides, a textbook chapter, a syllabus section | Question sets across Bloom's levels, flashcards with sources, a graded quiz session, and a Leitner review schedule |
 | [`book-tutor`](skills/learning/book-tutor/) | Chapter-by-chapter book study guide | Book chapters, excerpts or your reading notes, and your reading goal | Per chapter: key ideas, connections, check and discussion questions, application prompts, a one-page summary, and a review queue |
@@ -123,9 +130,9 @@ Tutors, active recall, exam prep and interview practice. · Install: `/plugin in
 
 ### 📣 Marketing
 
-Customer research, positioning, SEO, landing pages, launches. · Install: `/plugin install marketing-skills@lingegrace-research-skills`
+Customer research, positioning, SEO, landing pages, launches and case studies. · Install: `/plugin install marketing-skills@lingegrace-research-skills`
 
-| Skill | What it is | You give it | You get back |
+| Skill | What it is | Input | Output |
 |---|---|---|---|
 | [`competitor-messaging`](skills/marketing/competitor-messaging/) | Competitor messaging analysis and white space | Competitor homepages, landing pages or ads (URLs or pasted copy) and your own homepage or positioning | Claims by company with exact quotes and sources, a messaging matrix, overlap and white space, and 3 differentiated messaging angles |
 | [`content-repurposing`](skills/marketing/content-repurposing/) | Repurpose content across channels | One source piece (article, report, webinar transcript, newsletter, podcast notes) and the channels you post on | The key message, a version per channel, and a message integrity check table confirming each keeps the core claim, audience and CTA |
@@ -137,11 +144,11 @@ Customer research, positioning, SEO, landing pages, launches. · Install: `/plug
 | [`seo-research`](skills/marketing/seo-research/) | SEO keyword research and keyword map | Your product or topic, the audience and market, and optionally Ahrefs, Semrush or Google Search Console exports and your existing URLs | Keyword clusters tagged by search intent and funnel stage (TOFU/MOFU/BOFU), priorities with reasons, a page plan and cannibalisation risks |
 | [`value-proposition-writer`](skills/marketing/value-proposition-writer/) | Value proposition writer — features to benefits (FAB) | PRD, product spec, feature list, landing page, pitch deck | FAB matrix per audience, value proposition, gaps to fix, and optionally the finished PRD value section or one-pager |
 
-### 🧭 Product
+### 🧭 Product Management
 
-Discovery, PRDs, specs and critiques, grounded in user research. · Install: `/plugin install product-skills@lingegrace-research-skills`
+Discovery, PRDs, specs, critiques, personas and AI product audits. · Install: `/plugin install product-skills@lingegrace-research-skills`
 
-| Skill | What it is | You give it | You get back |
+| Skill | What it is | Input | Output |
 |---|---|---|---|
 | [`ai-product-audit`](skills/product/ai-product-audit/) | AI product trust & risk audit | Screenshots, user flows, demo access, spec, system prompt or policies | Ranked risk table with evidence and fixes, area-by-area ratings, quick wins, and items for legal review |
 | [`feature-spec`](skills/product/feature-spec/) | User stories and acceptance criteria | An approved PRD, a feature description, design notes | User stories with Given/When/Then acceptance criteria, edge cases, empty/loading/error states, analytics events, dependencies, rollout plan and open questions |
@@ -150,11 +157,11 @@ Discovery, PRDs, specs and critiques, grounded in user research. · Install: `/p
 | [`product-discovery`](skills/product/product-discovery/) | Opportunity solution tree and assumption tests | A desired outcome (e.g. increase activation) plus data, interview notes, feedback, support tickets | An opportunity solution tree (outcome → opportunities → solutions → assumption tests), an assumption map (desirability, viability, feasibility, usability) and the next 3 cheapest experiments |
 | [`user-persona-builder`](skills/product/user-persona-builder/) | Personas & Jobs-to-be-Done | Interview notes, survey data, reviews, CRM or sales notes, support tickets | 2–4 persona cards with JTBD, pains, triggers and buying criteria, a comparison table, and what to validate next |
 
-### 🛠 Skill Engineering
+### 🛠 Build Your Own Skills
 
-Write, review and test your own skills. · Install: `/plugin install skill-engineering-skills@lingegrace-research-skills`
+Write, review, test and orchestrate your own skills. · Install: `/plugin install skill-engineering-skills@lingegrace-research-skills`
 
-| Skill | What it is | You give it | You get back |
+| Skill | What it is | Input | Output |
 |---|---|---|---|
 | [`agent-orchestrator`](skills/skill-engineering/agent-orchestrator/) | Plan a multi-agent AI workflow | A multi-step goal, the files or data you have, and where it will run (Claude Code sub-agents, a workflow tool, by hand) | Sub-tasks with a parallel run order, handoff contracts, human review checkpoints, failure handling and a ready-to-paste brief per sub-agent |
 | [`prompt-to-skill`](skills/skill-engineering/prompt-to-skill/) | Turn a saved prompt into a skill | A prompt you reuse (from a notes app, a prompt library, custom instructions), and optionally an output you liked | A SKILL.md with trigger, steps, output template and rules, one-off details turned into clarifying questions, a before/after and a change log |

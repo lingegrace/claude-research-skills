@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Evidence-first Claude skills for students and professionals: research, writing, work documents, learning, marketing, product and skill engineering.",
-    "version": "3.0.0"
+    "version": "3.1.0"
   },
   "plugins": [
     {
@@ -15,26 +15,26 @@
       "source": "./",
       "strict": false,
       "skills": [
-        "./skills/research/competitor-analysis",
-        "./skills/research/content-research-analyst",
-        "./skills/research/deep-research",
-        "./skills/research/fact-check-draft",
-        "./skills/research/interview-guide",
-        "./skills/research/literature-review",
-        "./skills/research/market-research",
-        "./skills/research/quantitative-analysis",
-        "./skills/research/research-question-grill",
-        "./skills/research/sociology-deep-research",
-        "./skills/research/survey-design",
-        "./skills/research/thematic-analysis",
-        "./skills/research/topic-discovery",
-        "./skills/research/trend-research",
+        "./skills/social-science/interview-guide",
+        "./skills/social-science/literature-review",
+        "./skills/social-science/quantitative-analysis",
+        "./skills/social-science/research-question-grill",
+        "./skills/social-science/sociology-deep-research",
+        "./skills/social-science/survey-design",
+        "./skills/social-science/thematic-analysis",
+        "./skills/market-research/competitor-analysis",
+        "./skills/market-research/deep-research",
+        "./skills/market-research/market-research",
+        "./skills/market-research/topic-discovery",
+        "./skills/market-research/trend-research",
         "./skills/writing/abstract-writer",
         "./skills/writing/academic-editing",
         "./skills/writing/citation-formatter",
+        "./skills/writing/content-research-analyst",
         "./skills/writing/copy-editor",
         "./skills/writing/ethics-application",
         "./skills/writing/executive-writing",
+        "./skills/writing/fact-check-draft",
         "./skills/writing/human-writing",
         "./skills/writing/interview-to-article",
         "./skills/writing/linkedin-writer",
@@ -85,39 +85,47 @@
       ]
     },
     {
-      "name": "research-intelligence-skills",
-      "description": "Research & Intelligence: Find, check and analyse information, then form a judgment. (14 skills)",
+      "name": "social-science-research-skills",
+      "description": "Social Science Research: Research questions, literature reviews, interviews, thematic and quantitative analysis. (7 skills)",
       "source": "./",
       "strict": false,
       "skills": [
-        "./skills/research/competitor-analysis",
-        "./skills/research/content-research-analyst",
-        "./skills/research/deep-research",
-        "./skills/research/fact-check-draft",
-        "./skills/research/interview-guide",
-        "./skills/research/literature-review",
-        "./skills/research/market-research",
-        "./skills/research/quantitative-analysis",
-        "./skills/research/research-question-grill",
-        "./skills/research/sociology-deep-research",
-        "./skills/research/survey-design",
-        "./skills/research/thematic-analysis",
-        "./skills/research/topic-discovery",
-        "./skills/research/trend-research"
+        "./skills/social-science/interview-guide",
+        "./skills/social-science/literature-review",
+        "./skills/social-science/quantitative-analysis",
+        "./skills/social-science/research-question-grill",
+        "./skills/social-science/sociology-deep-research",
+        "./skills/social-science/survey-design",
+        "./skills/social-science/thematic-analysis"
+      ]
+    },
+    {
+      "name": "market-research-skills",
+      "description": "Market Research: Deep research, market sizing, competitors, trends and topics, with sources you can check. (5 skills)",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/market-research/competitor-analysis",
+        "./skills/market-research/deep-research",
+        "./skills/market-research/market-research",
+        "./skills/market-research/topic-discovery",
+        "./skills/market-research/trend-research"
       ]
     },
     {
       "name": "writing-skills",
-      "description": "Content & Communication: You know what to say. Turn it into writing that fits the reader. (15 skills)",
+      "description": "Writing, Editing & Social Media: Research briefs, fact-checks, your own voice, LinkedIn, newsletters and academic writing. (17 skills)",
       "source": "./",
       "strict": false,
       "skills": [
         "./skills/writing/abstract-writer",
         "./skills/writing/academic-editing",
         "./skills/writing/citation-formatter",
+        "./skills/writing/content-research-analyst",
         "./skills/writing/copy-editor",
         "./skills/writing/ethics-application",
         "./skills/writing/executive-writing",
+        "./skills/writing/fact-check-draft",
         "./skills/writing/human-writing",
         "./skills/writing/interview-to-article",
         "./skills/writing/linkedin-writer",
@@ -131,7 +139,7 @@
     },
     {
       "name": "work-skills",
-      "description": "Work & Documents: Meetings, reports, memos and SOPs, without the busywork. (5 skills)",
+      "description": "Meetings, Memos & Reports: Meeting actions, decision memos, weekly reports, document reviews and SOPs. (5 skills)",
       "source": "./",
       "strict": false,
       "skills": [
@@ -144,7 +152,7 @@
     },
     {
       "name": "learning-skills",
-      "description": "Learning & Practice: Tutors, active recall, exam prep and interview practice. (12 skills)",
+      "description": "Learning & Exam Prep: Tutors, active recall, IELTS, study plans, interview practice and CV reviews. (12 skills)",
       "source": "./",
       "strict": false,
       "skills": [
@@ -164,7 +172,7 @@
     },
     {
       "name": "marketing-skills",
-      "description": "Marketing: Customer research, positioning, SEO, landing pages, launches. (9 skills)",
+      "description": "Marketing: Customer research, positioning, SEO, landing pages, launches and case studies. (9 skills)",
       "source": "./",
       "strict": false,
       "skills": [
@@ -181,7 +189,7 @@
     },
     {
       "name": "product-skills",
-      "description": "Product: Discovery, PRDs, specs and critiques, grounded in user research. (6 skills)",
+      "description": "Product Management: Discovery, PRDs, specs, critiques, personas and AI product audits. (6 skills)",
       "source": "./",
       "strict": false,
       "skills": [
@@ -195,7 +203,7 @@
     },
     {
       "name": "skill-engineering-skills",
-      "description": "Skill Engineering: Write, review and test your own skills. (6 skills)",
+      "description": "Build Your Own Skills: Write, review, test and orchestrate your own skills. (6 skills)",
       "source": "./",
       "strict": false,
       "skills": [
