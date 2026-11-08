@@ -167,7 +167,7 @@ Write, review and test your own skills. · Install: `/plugin install skill-engin
 
 ## Pro workflows
 
-The free skills each do one job. **Pro skills** run a whole workflow end to end, with checkpoints for your approval: research → article, a LinkedIn content system, content strategy, marketing research, PM research, an SEO content system, BOFU pages, a knowledge base builder, and a skill eval system. Custom skills built around your team's process are also available. See **[Pro](https://lingegrace.github.io/skills/pro/)**.
+The free skills each do one job. **Pro skills** run a whole workflow end to end, with checkpoints for your approval: research → article, a LinkedIn content system, content strategy, marketing research, PM research, an SEO content system, a knowledge base builder, and a skill eval system. Custom skills built around your team's process are also available. See **[Pro](https://lingegrace.github.io/skills/pro/)**.
 
 ## FAQ
 
